@@ -1,0 +1,47 @@
+.manufacturer-section {
+  padding: 60px 20px;
+  text-align: center; /* centers section title */
+  background-color: #f5f5f5;
+}
+
+.manufacturer-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.manufacturer-grid {
+  display: flex;             /* row layout */
+  justify-content: center;   /* center all cards horizontally */
+  flex-wrap: wrap;           /* wrap to next line on small screens */
+  gap: 30px;                 /* spacing between cards */
+}
+
+.manufacturer-card {
+  flex: 0 1 200px;           /* base width 200px, flexible */
+  display: flex;
+  flex-direction: column;    /* image above text */
+  align-items: center;       /* center image and name */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.manufacturer-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;         /* keeps image ratio, crops if needed */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.manufacturer-card p {
+  font-weight: 500;
+  text-align: center;        /* center manufacturer name */
+  margin: 0;
+}
+
+.manufacturer-card:hover {
+  transform: translateY(-5px);
+}

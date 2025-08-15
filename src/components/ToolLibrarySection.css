@@ -1,0 +1,47 @@
+.tool-library-section {
+  padding: 60px 20px;
+  text-align: center; /* centers section title */
+  background-color: #f0f0f0;
+}
+
+.tool-library-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.tool-grid {
+  display: flex;             /* row layout */
+  justify-content: center;   /* center all cards horizontally */
+  flex-wrap: wrap;           /* wrap to next line on smaller screens */
+  gap: 30px;                 /* spacing between cards */
+}
+
+.tool-card {
+  flex: 0 1 200px;           /* card width */
+  display: flex;
+  flex-direction: column;    /* image above text */
+  align-items: center;       /* center image and name */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.tool-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;         /* crop image to fit box */
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tool-card p {
+  font-weight: 500;
+  text-align: center;        /* center tool name */
+  margin: 0;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
