@@ -1,69 +1,71 @@
-# React + TypeScript + Vite
+# ✨ 3D Landing Page — Motor Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interactive landing page built with **React**, **TypeScript**, **Vite**, and **Three.js** to display a real-time animated 3D motor with metallic reflections using `.glb` and `.exr` textures. Includes an embedded video section and polished UI to demonstrate front-end and WebGL skills.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🔗 Live Demo
 
-## Expanding the ESLint configuration
+👉 https://motorshowcase-3d.netlify.app/
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🚀 Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+✅ Real-time 3D model rendering using React-Three-Fiber  
+✅ Metallic shading via EXR environment texture  
+✅ Auto-rotating animation (or GLB animation playback)  
+✅ Responsive hero section with scroll content  
+✅ Embedded YouTube video section  
+✅ React component based architecture  
+✅ Fast builds via Vite + TypeScript  
+✅ Deployed on Netlify  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🧰 Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React + TypeScript + Vite**
+- **@react-three/fiber** (Three.js)
+- **drei**
+- **Tailwind CSS**
+- **Netlify (deployment)**
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+### 📂 Project Structure
+
+landing-page/
+├── public/
+│ ├── landing_page_motor.glb
+│ ├── forest.exr
+├── src/
+│ ├── components/
+│ │ ├── ModelViewer.tsx
+│ │ ├── HeroWithVideo.tsx
+│ │ ├── ManufacturerSection.tsx
+│ │ ├── ToolLibrarySection.tsx
+│ │ └── ContactSection.tsx
+│ ├── App.tsx
+│ └── main.tsx
+├── package.json
+├── netlify.toml
+└── vite.config.ts
+
+
+### 📦 Installation & Setup
+
+1️⃣ **Clone the repo**
+
+git clone https://github.com/Anagha-2004/landing-page.git
+cd landing-page
+2️⃣ Install dependencies
+npm install
+3️⃣ Run locally
+npm run dev
+4️⃣ Build for production
+npm run build
+
+
+Built by Naga Sahithya Anagha — B.Tech (CSE), Full Stack & AI Enthusiast
+
