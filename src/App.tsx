@@ -1,4 +1,4 @@
-import React from "react";
+
 import Navbar from "./components/Navbar";
 import HeroWithVideo from "./components/HeroWithVideo"; // exact casing
 import ManufacturerSection from "./components/ManufacturerSection";

@@ -1,4 +1,4 @@
-import React from "react";
+
 import ModelViewer from "./ModelViewer";
 import "./HeroWithVideo.css";
 

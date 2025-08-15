@@ -23,12 +23,13 @@ const Model: React.FC<ModelProps> = ({ url }) => {
     }
   }, [animations]);
 
-  useFrame((state, delta) => {
-    mixer.current?.update(delta);
-    if (group.current && (!animations || animations.length === 0)) {
-      group.current.rotation.y += 0.01; // Auto-rotate if no animation
-    }
-  });
+  useFrame((_state, delta) => {
+  mixer.current?.update(delta);
+  if (group.current && (!animations || animations.length === 0)) {
+    group.current.rotation.y += 0.01;
+  }
+});
+
 
   // Lower motor slightly
   return <primitive ref={group} object={scene} position={[0, -0.3, 0]} />;
